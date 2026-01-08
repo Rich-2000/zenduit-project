@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+	<meta name="description" content="Maddy Group Ltd - Exclusive Zenduit Partner in Africa. Advanced fleet management and telematics solutions.">
+	<meta name="keywords" content="Zenduit, Fleet Management, GPS Tracking, Telematics, Ghana, Africa">
+	<meta name="author" content="Maddy Group Ltd">
+	<title>ZenDUiT Fleet Management Solutions - Maddy Group Ltd</title>
+	<link rel="shortcut icon" type="image/x-icon" href="images/maddylogo.jpg">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="css/slicknav.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/swiper-bundle.min.css">
+	<link href="css/all.min.css" rel="stylesheet" media="screen">
+	<link href="css/animate.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="css/mousecursor.css">
+	<link href="css/custom.css" rel="stylesheet" media="screen">
+	<style>
+		.zenduit-hero {
+			background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+			padding: 120px 0 80px;
+			position: relative;
+			overflow: hidden;
+		}
+		.zenduit-hero::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 50%;
+			height: 100%;
+			background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+			clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+		}
+		.partnership-badge-large {
+			display: inline-block;
+			background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+			padding: 16px 32px;
+			border-radius: 50px;
+			margin-bottom: 24px;
+			box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+		}
+		.partnership-badge-large span {
+			font-size: 16px;
+			font-weight: 700;
+			text-transform: uppercase;
+			letter-spacing: 3px;
+			color: #fff;
+		}
+		.feature-card {
+			background: #fff;
+			border-radius: 20px;
+			padding: 40px 30px;
+			box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+			transition: all 0.4s ease;
+			height: 100%;
+			margin-bottom: 30px;
+		}
+		.feature-card:hover {
+			transform: translateY(-10px);
+			box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+		}
+		.feature-card .icon-box {
+			width: 80px;
+			height: 80px;
+			background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+			border-radius: 20px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-bottom: 24px;
+		}
+		.feature-card .icon-box i {
+			font-size: 36px;
+			color: #fff;
+		}
+		.feature-card h3 {
+			font-size: 22px;
+			font-weight: 700;
+			margin-bottom: 16px;
+			color: #1a1a2e;
+		}
+		.feature-card p {
+			font-size: 15px;
+			line-height: 1.8;
+			color: #666;
+			margin: 0;
+		}
+		.solution-section {
+			padding: 80px 0;
+			background: #f8f9fa;
+		}
+		.solution-item {
+			display: flex;
+			align-items: center;
+			margin-bottom: 60px;
+			gap: 60px;
+		}
+		.solution-image {
+			flex: 0 0 45%;
+			border-radius: 20px;
+			overflow: hidden;
+			box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+		}
+		.solution-image img {
+			width: 100%;
+			height: auto;
+			display: block;
+		}
+		.solution-content {
+			flex: 1;
+		}
+		.solution-content h3 {
+			font-size: 32px;
+			font-weight: 700;
+			margin-bottom: 20px;
+			color: #1a1a2e;
+		}
+		.solution-content p {
+			font-size: 16px;
+			line-height: 1.8;
+			color: #666;
+			margin-bottom: 24px;
+		}
+		.solution-features {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+		.solution-features li {
+			padding: 12px 0;
+			padding-left: 32px;
+			position: relative;
+			font-size: 15px;
+			color: #444;
+		}
+		.solution-features li::before {
+			content: '✓';
+			position: absolute;
+			left: 0;
+			top: 12px;
+			width: 24px;
+			height: 24px;
+			background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+			border-radius: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: #fff;
+			font-weight: 700;
+			font-size: 14px;
+		}
+		.stats-section {
+			background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+			padding: 80px 0;
+			color: #fff;
+		}
+		.stat-item {
+			text-align: center;
+			padding: 30px 20px;
+		}
+		.stat-item h2 {
+			font-size: 56px;
+			font-weight: 700;
+			color: #fff;
+			margin-bottom: 12px;
+			background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			background-clip: text;
+		}
+		.stat-item p {
+			font-size: 18px;
+			color: rgba(255,255,255,0.8);
+			margin: 0;
+		}
+		.benefits-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+			gap: 30px;
+			margin-top: 40px;
+		}
+		.benefit-card {
+			background: #fff;
+			padding: 30px;
+			border-radius: 15px;
+			border-left: 4px solid #667eea;
+			transition: all 0.3s ease;
+		}
+		.benefit-card:hover {
+			transform: translateX(10px);
+			box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+		}
+		.benefit-card h4 {
+			font-size: 18px;
+			font-weight: 700;
+			margin-bottom: 12px;
+			color: #1a1a2e;
+		}
+		.benefit-card p {
+			font-size: 14px;
+			color: #666;
+			margin: 0;
+			line-height: 1.6;
+		}
+		.cta-zenduit {
+			background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+			padding: 80px 0;
+			text-align: center;
+			color: #fff;
+		}
+		.cta-zenduit h2 {
+			font-size: 42px;
+			font-weight: 700;
+			margin-bottom: 20px;
+			color: #fff;
+		}
+		.cta-zenduit p {
+			font-size: 18px;
+			margin-bottom: 40px;
+			color: rgba(255,255,255,0.9);
+		}
+		.cta-zenduit .btn-default {
+			background: #fff;
+			color: #667eea;
+			padding: 16px 48px;
+			font-size: 16px;
+			font-weight: 700;
+			border-radius: 50px;
+			transition: all 0.3s ease;
+			border: none;
+		}
+		.cta-zenduit .btn-default:hover {
+			transform: translateY(-3px);
+			box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+		}
+		@media (max-width: 991px) {
+			.solution-item {
+				flex-direction: column;
+				gap: 30px;
+			}
+			.solution-image {
+				flex: 0 0 100%;
+			}
+			.solution-item:nth-child(even) {
+				flex-direction: column;
+			}
+		}
+	</style>
+</head>
+<body>
+
+    <div class="preloader">
+		<div class="loading-container">
+			<div class="loading"></div>
+			<div id="loading-icon"><img src="images/loader.svg" alt=""></div>
+		</div>
+	</div>
+
+    <div class="topbar">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-7">
+                    <div class="topbar-info-text">
+                        <p>Exclusive ZenUiT Partner in Africa <a href="contact.html">Contact now</a></p>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="topbar-links">
+                        <div class="topbar-contact-info">
+                            <ul>
+                                <li><a href="#">Help</a></li>
+                                <li><a href="#">Support</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="topbar-social-links">
+                            <ul>
+                                <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="main-header">
+		<div class="header-sticky">
+			<nav class="navbar navbar-expand-lg">
+				<div class="container">
+					<a class="navbar-brand" href="./" style="display: flex; align-items: center; gap: 12px;">
+						<img src="images/maddylogo.jpg" alt="Maddy Group Ltd Logo" style="height: 50px; width: auto;">
+						<span style="font-size: 20px; font-weight: 700; color: #000; white-space: nowrap;">Maddy Group Ltd</span>
+					</a>
+
+					<div class="collapse navbar-collapse main-menu">
+                        <div class="nav-menu-wrapper">
+                            <ul class="navbar-nav mr-auto" id="menu">
+                                <li class="nav-item"><a class="nav-link" href="./">Home</a></li>                                
+                                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                                <li class="nav-item submenu"><a class="nav-link" href="services.html">Services</a>
+                                    <ul>
+                                        <li class="nav-item"><a class="nav-link" href="cybersecurity-services.html">Cybersecurity Services</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="software-development.html">Software Development</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="website-development.html">Website Development</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="iot-services.html">IoT Services & Smart Cards</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="web-solutions.html">Web Solutions</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="ict-procurement.html">ICT Tools Procurement</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                                <li class="nav-item submenu"><a class="nav-link" href="#">Resources</a>
+                                    <ul>                                        
+                                        <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="team.html">Our Team</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="faqs.html">FAQs</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="blog-single.html">Case Studies</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>                         
+                            </ul>
+                        </div>
+                        <div class="header-btn">
+                            <a href="contact.html" class="btn-default">get started</a>
+                        </div>
+					</div>
+					<div class="navbar-toggle"></div>
+				</div>
+			</nav>
+			<div class="responsive-menu"></div>
+		</div>
+	</header>
+
+    <!-- Zenduit Hero Section -->
+    <div class="zenduit-hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mx-auto text-center">
+                    <div class="partnership-badge-large wow fadeInUp">
+                        <span>Exclusive African Partnership</span>
+                    </div>
+                    <div class="section-title dark-section">
+                        <h1 class="wow fadeInUp" data-wow-delay="0.2s" style="color: #fff; font-size: 52px; margin-bottom: 24px;">
+                            Advanced Fleet Management Solutions by <span style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">ZenUiT</span>
+                        </h1>
+                        <p class="wow fadeInUp" data-wow-delay="0.4s" style="color: rgba(255,255,255,0.9); font-size: 18px; line-height: 1.8; max-width: 800px; margin: 0 auto 40px;">
+                            As the only approved ZenUiT partner across the entire African continent, Maddy Group Ltd brings cutting-edge GPS tracking, telematics, and fleet optimization solutions to businesses throughout Ghana and Africa.
+                        </p>
+                        <div class="hero-btn wow fadeInUp" data-wow-delay="0.6s">
+                            <a href="contact.html" class="btn-default btn-highlighted" style="margin-right: 20px;">Get Started</a>
+                            <a href="#solutions" class="btn-default">Explore Solutions</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- What is Zenduit Section -->
+<div class="about-us" style="padding: 80px 0; background: #fff;">
+    <div class="container">
+        <div class="row section-row" style="margin-bottom: 40px;">
+            <div class="col-lg-12">
+                <div class="section-title text-center">
+                    <h3 class="wow fadeInUp">About ZenUiT</h3>
+                    <h2 class="wow fadeInUp" data-wow-delay="0.2s">Leading <span>Telematics Innovation</span></h2>
+                </div>
+            </div>
+        </div>
+        
+        <div class="solution-item wow fadeInUp" style="margin-bottom: 0;">
+            <div class="solution-image">
+                <img src="images/Track.png" alt="Zenduit GPS Tracking">
+            </div>
+            <div class="solution-content">
+                <h3 style="font-size: 28px; margin-bottom: 20px;">Advanced Fleet Management Platform</h3>
+                <p>
+                    ZenDUiT is a global leader in developing, customizing, and integrating telematics solutions. With a focus on building intelligent, scalable mobile and web platforms, ZenUiT transforms how businesses manage their fleets across various industries.
+                </p>
+                <p>
+                    Through advanced GPS tracking, AI-powered analytics, and real-time monitoring, ZenUiT helps organizations increase profitability, enhance safety, and streamline operations.
+                </p>
+                <ul class="solution-features" style="margin-top: 24px;">
+                    <li>Real-time GPS Fleet Tracking</li>
+                    <li>AI-Powered Safety Analytics</li>
+                    <li>Predictive Maintenance Systems</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Core Features Section -->
+    <div class="our-services" style="background: #f8f9fa;">
+        <div class="container">
+            <div class="row section-row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h3 class="wow fadeInUp">Core Capabilities</h3>
+                        <h2 class="wow fadeInUp" data-wow-delay="0.2s">Comprehensive Fleet <span>Management Features</span></h2>
+                        <p class="wow fadeInUp" data-wow-delay="0.4s">
+                            ZenUiT's platform provides everything you need to optimize your fleet operations, from real-time tracking to advanced analytics.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card wow fadeInUp">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <h3>Real-Time GPS Tracking</h3>
+                        <p>Monitor your fleet's location in real-time with precision GPS tracking. Optimize routes, reduce fuel consumption, and improve dispatch efficiency with live location updates.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-video"></i>
+                        </div>
+                        <h3>AI Dash Cameras</h3>
+                        <p>Advanced AI-powered dash cameras with 360° coverage detect unsafe driving behaviors, provide instant coaching, and capture critical incidents for enhanced fleet safety.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-wrench"></i>
+                        </div>
+                        <h3>Predictive Maintenance</h3>
+                        <p>Prevent costly breakdowns with AI-driven predictive maintenance. Real-time diagnostics detect issues early, reducing downtime by up to 40% and extending vehicle lifespan.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <h3>Driver Behavior Analytics</h3>
+                        <p>Track and analyze driver performance with detailed metrics on speed, braking, acceleration, and idling. Implement targeted coaching to improve safety and reduce accidents.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card wow fadeInUp" data-wow-delay="0.8s">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <h3>Asset Security & Theft Prevention</h3>
+                        <p>Protect your valuable assets with geofencing, motion alerts, and remote vehicle shutdown capabilities. Recover stolen equipment quickly with hidden GPS trackers.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card wow fadeInUp" data-wow-delay="1s">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-clipboard-check"></i>
+                        </div>
+                        <h3>Compliance & Reporting</h3>
+                        <p>Automated compliance tracking and comprehensive reporting ensure adherence to safety regulations while providing actionable insights for continuous improvement.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Solutions Section -->
+    <div class="solution-section" id="solutions">
+        <div class="container">
+            <div class="row section-row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h3 class="wow fadeInUp">Solutions</h3>
+                        <h2 class="wow fadeInUp" data-wow-delay="0.2s">Industry-Specific <span>Fleet Solutions</span></h2>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Asset Monitoring -->
+            <div class="solution-item wow fadeInUp">
+                <div class="solution-image">
+                    <img src="images/Asset-Monitoring.png" alt="Asset Monitoring">
+                </div>
+                <div class="solution-content">
+                    <h3>Comprehensive Asset Monitoring</h3>
+                    <p>
+                        Track and monitor all your fleet assets with precision. From vehicles to equipment and tools, Zenduit's asset monitoring provides complete visibility into your operations.
+                    </p>
+                    <ul class="solution-features">
+                        <li>Real-time location tracking for all assets</li>
+                        <li>Utilization analytics to optimize asset deployment</li>
+                        <li>Automated alerts for unauthorized movement</li>
+                        <li>Battery-powered trackers with up to 8 years life</li>
+                        <li>Reduce equipment loss by up to 75%</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Driver Efficiency -->
+            <div class="solution-item wow fadeInUp" style="flex-direction: row-reverse;">
+                <div class="solution-image">
+                    <img src="images/driver-efficiency.png" alt="Driver Efficiency">
+                </div>
+                <div class="solution-content">
+                    <h3>Driver Efficiency & Safety</h3>
+                    <p>
+                        Improve driver performance and safety with comprehensive behavior monitoring and automated coaching systems that reduce accidents and fuel costs.
+                    </p>
+                    <ul class="solution-features">
+                        <li>AI-powered detection of harsh braking, acceleration, and cornering</li>
+                        <li>Real-time driver coaching and feedback</li>
+                        <li>Safety score tracking and reporting</li>
+                        <li>Reduce safety triggers by up to 70%</li>
+                        <li>Lower insurance premiums through improved safety records</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Expandability -->
+            <div class="solution-item wow fadeInUp">
+                <div class="solution-image">
+                    <img src="images/Expandability.png" alt="Expandability">
+                </div>
+                <div class="solution-content">
+                    <h3>Scalable & Expandable Platform</h3>
+                    <p>
+                        Zenduit grows with your business. Start with basic tracking and expand to advanced features as your fleet management needs evolve.
+                    </p>
+                    <ul class="solution-features">
+                        <li>Modular system supporting 2 to 2000+ vehicles</li>
+                        <li>Integration with existing business systems</li>
+                        <li>Add cameras, sensors, and IoT devices as needed</li>
+                        <li>Cloud-based platform accessible anywhere</li>
+                        <li>Seamless integration with third-party applications</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Optimization -->
+            <div class="solution-item wow fadeInUp" style="flex-direction: row-reverse;">
+                <div class="solution-image">
+                    <img src="images/optimization.png" alt="Fleet Optimization">
+                </div>
+                <div class="solution-content">
+                    <h3>Fleet Performance Optimization</h3>
+                    <p>
+                        Maximize efficiency and reduce costs with data-driven insights that optimize every aspect of your fleet operations.
+                    </p>
+                    <ul class="solution-features">
+                        <li>Route optimization to reduce fuel costs by 20-30%</li>
+                        <li>Idle time monitoring and reduction</li>
+                        <li>Fuel consumption analytics and alerts</li>
+                        <li>Maintenance cost tracking and reduction</li>
+                        <li>Comprehensive TCO (Total Cost of Ownership) insights</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stats Section -->
+    <div class="stats-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-item wow fadeInUp">
+                        <h2><span class="counter">75</span>%</h2>
+                        <p>Reduction in Fleet Management Effort</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-item wow fadeInUp" data-wow-delay="0.2s">
+                        <h2><span class="counter">40</span>%</h2>
+                        <p>Decrease in Equipment Failures</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-item wow fadeInUp" data-wow-delay="0.4s">
+                        <h2><span class="counter">70</span>%</h2>
+                        <p>Reduction in Safety Triggers</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-item wow fadeInUp" data-wow-delay="0.6s">
+                        <h2><span class="counter">30</span>%</h2>
+                        <p>Lower Maintenance Costs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Benefits Section -->
+    <div class="our-services" style="padding: 80px 0;">
+        <div class="container">
+            <div class="row section-row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h3 class="wow fadeInUp">Benefits</h3>
+                        <h2 class="wow fadeInUp" data-wow-delay="0.2s">Why Choose <span>ZenDUiT Solutions</span></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card wow fadeInUp">
+                    <h4>Reduce Operating Costs</h4>
+                    <p>Cut fuel costs by 20-30% through route optimization, reduce maintenance expenses by 30%, and lower insurance premiums with improved safety records.</p>
+                </div>
+                <div class="benefit-card wow fadeInUp" data-wow-delay="0.1s">
+                    <h4>Enhance Fleet Safety</h4>
+                    <p>AI-powered monitoring detects unsafe behaviors in real-time, automated coaching improves driver performance, and reduce accidents by up to 60%.</p>
+                </div>
+                <div class="benefit-card wow fadeInUp" data-wow-delay="0.2s">
+                    <h4>Improve Productivity</h4>
+                    <p>Optimize asset utilization, streamline dispatch operations, reduce idle time, and increase vehicle uptime with predictive maintenance.</p>
+                </div>
+                <div class="benefit-card wow fadeInUp" data-wow-delay="0.3s">
+                    <h4>Ensure Compliance</h4>
+                    <p>Automated tracking of safety regulations, comprehensive audit trails, electronic logging, and detailed compliance reporting.</p>
+                </div>
+                <div class="benefit-card wow fadeInUp" data-wow-delay="0.4s">
+                    <h4>Data-Driven Decisions</h4>
+                    <p>Access real-time analytics and comprehensive reporting, make informed decisions with actionable insights, and continuously optimize operations.</p>
+                </div>
+                <div class="benefit-card wow fadeInUp" data-wow-delay="0.5s">
+                    <h4>Scalable Solution</h4>
+                    <p>Start small and grow with your business, flexible platform that adapts to your needs, and seamless integration with existing systems.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Industries Section -->
+    <div class="our-services" style="background: #f8f9fa; padding: 80px 0;">
+        <div class="container">
+            <div class="row section-row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h3 class="wow fadeInUp">Industries</h3>
+                        <h2 class="wow fadeInUp" data-wow-delay="0.2s">Trusted Across <span>Multiple Industries</span></h2>
+                        <p class="wow fadeInUp" data-wow-delay="0.4s">
+                            ZenDUiT's versatile platform serves diverse industries across Ghana and Africa
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="service-item wow fadeInUp">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-truck"></i>
+                        </div>
+                        <div class="service-title-box">
+                            <div class="service-title">
+                                <h3>Transportation & Logistics</h3>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <p>Optimize delivery routes, track shipments in real-time, and improve on-time performance.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="service-item active wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-building"></i>
+                        </div>
+                        <div class="service-title-box">
+                            <div class="service-title">
+                                <h3>Construction</h3>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <p>Track heavy equipment, monitor job site activity, and prevent equipment theft.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="service-item wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-ambulance"></i>
+                        </div>
+                        <div class="service-title-box">
+                            <div class="service-title">
+                                <h3>Emergency Services</h3>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <p>Ensure rapid response times, maintain vehicle readiness, and improve public safety.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="service-item wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-shop"></i>
+                        </div>
+                        <div class="service-title-box">
+                            <div class="service-title">
+                                <h3>Retail & Distribution</h3>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <p>Optimize last-mile delivery, reduce delivery costs, and enhance customer satisfaction.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="service-item wow fadeInUp" data-wow-delay="0.8s">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+                        <div class="service-title-box">
+                            <div class="service-title">
+                                <h3>Utilities</h3>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <p>Coordinate field service teams, track utility vehicles, and improve response times.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="service-item wow fadeInUp" data-wow-delay="1s">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-droplet"></i>
+                        </div>
+                        <div class="service-title-box">
+                            <div class="service-title">
+                                <h3>Oil & Gas</h3>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <p>Monitor fuel consumption, ensure driver safety in remote areas, and track high-value equipment.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="service-item wow fadeInUp" data-wow-delay="1.2s">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-leaf"></i>
+                        </div>
+                        <div class="service-title-box">
+                            <div class="service-title">
+                                <h3>Agriculture</h3>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <p>Track farm equipment, monitor harvest operations, and optimize agricultural logistics.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="service-item wow fadeInUp" data-wow-delay="1.4s">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-building-shield"></i>
+                        </div>
+                        <div class="service-title-box">
+                            <div class="service-title">
+                                <h3>Government</h3>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <p>Ensure accountability, track government vehicles, and optimize public service delivery.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Why Maddy Group Section -->
+    <div class="why-choose-us">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="why-choose-image">
+                        <figure class="image-anime reveal">
+                            <img src="images/why-choose-image.jpg" alt="">
+                        </figure>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="why-choose-content">
+                        <div class="section-title dark-section">
+                            <h3 class="wow fadeInUp">Why Maddy Group</h3>
+                            <h2 class="wow fadeInUp" data-wow-delay="0.2s">Your Trusted <span>ZenUiT Partner</span> in Africa</h2>
+                            <p class="wow fadeInUp" data-wow-delay="0.4s">
+                                As the exclusive ZenDUiT partner across Africa, Maddy Group Ltd brings unmatched expertise in fleet management and telematics implementation.
+                            </p>
+                        </div>
+                        <div class="why-choose-list">
+                            <div class="why-choose-item wow fadeInUp" data-wow-delay="0.6s">
+                                <div class="icon-box">
+                                    <img src="images/icon-why-choose-1.svg" alt="">
+                                </div>
+                                <div class="why-choose-item-content">
+                                    <h3>Certified ZenDUiT Specialists</h3>
+                                    <p>Our team is fully trained and certified by ZenDUiT to deliver world-class implementation and support services.</p>
+                                </div>
+                            </div>
+                            <div class="why-choose-item wow fadeInUp" data-wow-delay="0.8s">
+                                <div class="icon-box">
+                                    <img src="images/icon-why-choose-2.svg" alt="">
+                                </div>
+                                <div class="why-choose-item-content">
+                                    <h3>Local Expertise, Global Standards</h3>
+                                    <p>We understand the unique challenges of African businesses while delivering international-quality solutions.</p>
+                                </div>
+                            </div>
+                            <div class="why-choose-item wow fadeInUp" data-wow-delay="1s">
+                                <div class="icon-box">
+                                    <img src="images/icon-why-choose-3.svg" alt="">
+                                </div>
+                                <div class="why-choose-item-content">
+                                    <h3>Comprehensive Support</h3>
+                                    <p>From installation to training and ongoing support, we're with you every step of the way.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="cta-zenduit">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <h2 class="wow fadeInUp">Ready to Transform Your Fleet Management?</h2>
+                    <p class="wow fadeInUp" data-wow-delay="0.2s">
+                        Contact Maddy Group Ltd today for a free consultation and discover how ZenDUiT can revolutionize your operations.
+                    </p>
+                    <div class="wow fadeInUp" data-wow-delay="0.4s">
+                        <a href="contact.html" class="btn-default">Schedule a Demo</a>
+                        <a href="tel:0551111551" class="btn-default" style="margin-left: 20px; background: transparent; border: 2px solid #fff; color: #fff;">Call 0551111551</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer-header">
+                        <div class="footer-logo" style="display: flex; align-items: center; gap: 12px; justify-content: center;">
+                            <img src="images/maddylogo.jpg" alt="Maddy Group Ltd Logo" style="height: 60px; width: auto;">
+                            <span style="font-size: 24px; font-weight: 700; color: #fff;">Maddy Group Ltd</span>
+                        </div>
+                        <div class="footer-social-links">
+                            <ul>
+                                <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-links footer-newsletter-form">
+                        <h3>Subscribe our newsletter:</h3>
+                        <p>Stay updated with the latest fleet management insights.</p>
+                        <form id="newsletterForm" action="#" method="POST">
+                            <div class="form-group">
+                                <input type="email" name="email" class="form-control" id="mail" placeholder="Enter Your Email" required="">
+                                <button type="submit" class="newsletter-btn"><i class="fa-regular fa-paper-plane"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6">
+                    <div class="footer-links footer-quick-links">
+                        <h3>Quick link</h3>
+                        <ul>
+                            <li><a href="index.html">home</a></li>
+                            <li><a href="about.html">about us</a></li>
+                            <li><a href="services.html">services</a></li>
+                            <li><a href="blog-single.html">blog</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6">
+                    <div class="footer-links">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="cybersecurity-services.html">Cybersecurity Services</a></li>
+                            <li><a href="software-development.html">Software Development</a></li>
+                            <li><a href="website-development.html">Website Development</a></li>
+                            <li><a href="iot-services.html">IoT Services</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6">
+                    <div class="footer-links">
+                        <h3>Support</h3>
+                        <ul>
+                            <li><a href="#">Help</a></li>
+                            <li><a href="#">Term's & condition</a></li>
+                            <li><a href="#">Privacy policy</a></li>
+                            <li><a href="contact.html">Contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6">
+                    <div class="footer-links">
+                        <h3>Contact</h3>
+                        <ul>
+                            <li><a href="tel:0551111551">0551111551</a></li>
+                            <li><a href="mailto:info@maddygroupltd.com">info@maddygroupltd.com</a></li>
+                            <li>GD-219-3654, Accra, Ghana</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="footer-copyright-text">
+                            <p>Copyright © 2025 Maddy Group Ltd. All Rights Reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/validator.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/SmoothScroll.js"></script>
+    <script src="js/parallaxie.js"></script>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/magiccursor.js"></script>
+    <script src="js/SplitText.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <script src="js/jquery.mb.YTPlayer.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/function.js"></script>
+</body>
+</html>
