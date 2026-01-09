@@ -1,266 +1,412 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-	<meta name="description" content="Maddy Group Ltd - Exclusive Zenduit Partner in Africa. Advanced fleet management and telematics solutions.">
-	<meta name="keywords" content="Zenduit, Fleet Management, GPS Tracking, Telematics, Ghana, Africa">
-	<meta name="author" content="Maddy Group Ltd">
-	<title>ZenDUiT Fleet Management Solutions - Maddy Group Ltd</title>
-	<link rel="shortcut icon" type="image/x-icon" href="images/maddylogo.jpg">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="description" content="Maddy Group Ltd - Exclusive Zenduit Partner in Africa. Advanced fleet management and telematics solutions.">
+    <meta name="keywords" content="Zenduit, Fleet Management, GPS Tracking, Telematics, Ghana, Africa">
+    <meta name="author" content="Maddy Group Ltd">
+    <title>ZenDUiT Fleet Management Solutions - Maddy Group Ltd</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/maddylogo.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
-	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-	<link href="css/slicknav.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/swiper-bundle.min.css">
-	<link href="css/all.min.css" rel="stylesheet" media="screen">
-	<link href="css/animate.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/slicknav.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link href="css/all.min.css" rel="stylesheet" media="screen">
+    <link href="css/animate.css" rel="stylesheet">
     <link rel="stylesheet" href="css/magnific-popup.css">
-	<link rel="stylesheet" href="css/mousecursor.css">
-	<link href="css/custom.css" rel="stylesheet" media="screen">
-	<style>
-		.zenduit-hero {
-			background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-			padding: 120px 0 80px;
-			position: relative;
-			overflow: hidden;
-		}
-		.zenduit-hero::before {
-			content: '';
-			position: absolute;
-			top: 0;
-			right: 0;
-			width: 50%;
-			height: 100%;
-			background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
-			clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
-		}
-		.partnership-badge-large {
-			display: inline-block;
-			background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-			padding: 16px 32px;
-			border-radius: 50px;
-			margin-bottom: 24px;
-			box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
-		}
-		.partnership-badge-large span {
-			font-size: 16px;
-			font-weight: 700;
-			text-transform: uppercase;
-			letter-spacing: 3px;
-			color: #fff;
-		}
-		.feature-card {
-			background: #fff;
-			border-radius: 20px;
-			padding: 40px 30px;
-			box-shadow: 0 10px 40px rgba(0,0,0,0.08);
-			transition: all 0.4s ease;
-			height: 100%;
-			margin-bottom: 30px;
-		}
-		.feature-card:hover {
-			transform: translateY(-10px);
-			box-shadow: 0 20px 60px rgba(0,0,0,0.15);
-		}
-		.feature-card .icon-box {
-			width: 80px;
-			height: 80px;
-			background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-			border-radius: 20px;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			margin-bottom: 24px;
-		}
-		.feature-card .icon-box i {
-			font-size: 36px;
-			color: #fff;
-		}
-		.feature-card h3 {
-			font-size: 22px;
-			font-weight: 700;
-			margin-bottom: 16px;
-			color: #1a1a2e;
-		}
-		.feature-card p {
-			font-size: 15px;
-			line-height: 1.8;
-			color: #666;
-			margin: 0;
-		}
-		.solution-section {
-			padding: 80px 0;
-			background: #f8f9fa;
-		}
-		.solution-item {
-			display: flex;
-			align-items: center;
-			margin-bottom: 60px;
-			gap: 60px;
-		}
-		.solution-image {
-			flex: 0 0 45%;
-			border-radius: 20px;
-			overflow: hidden;
-			box-shadow: 0 20px 60px rgba(0,0,0,0.1);
-		}
-		.solution-image img {
-			width: 100%;
-			height: auto;
-			display: block;
-		}
-		.solution-content {
-			flex: 1;
-		}
-		.solution-content h3 {
-			font-size: 32px;
-			font-weight: 700;
-			margin-bottom: 20px;
-			color: #1a1a2e;
-		}
-		.solution-content p {
-			font-size: 16px;
-			line-height: 1.8;
-			color: #666;
-			margin-bottom: 24px;
-		}
-		.solution-features {
-			list-style: none;
-			padding: 0;
-			margin: 0;
-		}
-		.solution-features li {
-			padding: 12px 0;
-			padding-left: 32px;
-			position: relative;
-			font-size: 15px;
-			color: #444;
-		}
-		.solution-features li::before {
-			content: '✓';
-			position: absolute;
-			left: 0;
-			top: 12px;
-			width: 24px;
-			height: 24px;
-			background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-			border-radius: 50%;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			color: #fff;
-			font-weight: 700;
-			font-size: 14px;
-		}
-		.stats-section {
-			background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-			padding: 80px 0;
-			color: #fff;
-		}
-		.stat-item {
-			text-align: center;
-			padding: 30px 20px;
-		}
-		.stat-item h2 {
-			font-size: 56px;
-			font-weight: 700;
-			color: #fff;
-			margin-bottom: 12px;
-			background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
-			background-clip: text;
-		}
-		.stat-item p {
-			font-size: 18px;
-			color: rgba(255,255,255,0.8);
-			margin: 0;
-		}
-		.benefits-grid {
-			display: grid;
-			grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-			gap: 30px;
-			margin-top: 40px;
-		}
-		.benefit-card {
-			background: #fff;
-			padding: 30px;
-			border-radius: 15px;
-			border-left: 4px solid #667eea;
-			transition: all 0.3s ease;
-		}
-		.benefit-card:hover {
-			transform: translateX(10px);
-			box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-		}
-		.benefit-card h4 {
-			font-size: 18px;
-			font-weight: 700;
-			margin-bottom: 12px;
-			color: #1a1a2e;
-		}
-		.benefit-card p {
-			font-size: 14px;
-			color: #666;
-			margin: 0;
-			line-height: 1.6;
-		}
-		.cta-zenduit {
-			background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-			padding: 80px 0;
-			text-align: center;
-			color: #fff;
-		}
-		.cta-zenduit h2 {
-			font-size: 42px;
-			font-weight: 700;
-			margin-bottom: 20px;
-			color: #fff;
-		}
-		.cta-zenduit p {
-			font-size: 18px;
-			margin-bottom: 40px;
-			color: rgba(255,255,255,0.9);
-		}
-		.cta-zenduit .btn-default {
-			background: #fff;
-			color: #667eea;
-			padding: 16px 48px;
-			font-size: 16px;
-			font-weight: 700;
-			border-radius: 50px;
-			transition: all 0.3s ease;
-			border: none;
-		}
-		.cta-zenduit .btn-default:hover {
-			transform: translateY(-3px);
-			box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-		}
-		@media (max-width: 991px) {
-			.solution-item {
-				flex-direction: column;
-				gap: 30px;
-			}
-			.solution-image {
-				flex: 0 0 100%;
-			}
-			.solution-item:nth-child(even) {
-				flex-direction: column;
-			}
-		}
-	</style>
+    <link rel="stylesheet" href="css/mousecursor.css">
+    <link href="css/custom.css" rel="stylesheet" media="screen">
+    <style>
+        /* Mobile-First Responsive CSS */
+        .zenduit-hero {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            padding: 120px 0 80px;
+            position: relative;
+            overflow: hidden;
+        }
+        .zenduit-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+            clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+        }
+        .partnership-badge-large {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 16px 32px;
+            border-radius: 50px;
+            margin-bottom: 24px;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+        }
+        .partnership-badge-large span {
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #fff;
+        }
+        
+        /* Feature Cards - Improved spacing for mobile */
+        .feature-card {
+            background: #fff;
+            border-radius: 20px;
+            padding: 40px 30px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+            transition: all 0.4s ease;
+            height: 100%;
+            margin-bottom: 30px;
+        }
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+        }
+        .feature-card .icon-box {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 24px;
+        }
+        .feature-card .icon-box i {
+            font-size: 36px;
+            color: #fff;
+        }
+        .feature-card h3 {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: #1a1a2e;
+        }
+        .feature-card p {
+            font-size: 15px;
+            line-height: 1.8;
+            color: #666;
+            margin: 0;
+        }
+        
+        /* Solution Section - Alternating Layout from OLD HTML */
+        .solution-section {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+        .solution-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 60px;
+            gap: 60px;
+        }
+        .solution-image {
+            flex: 0 0 45%;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+        }
+        .solution-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .solution-content {
+            flex: 1;
+        }
+        .solution-content h3 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #1a1a2e;
+        }
+        .solution-content p {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #666;
+            margin-bottom: 24px;
+        }
+        .solution-features {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .solution-features li {
+            padding: 12px 0;
+            padding-left: 32px;
+            position: relative;
+            font-size: 15px;
+            color: #444;
+        }
+        .solution-features li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            top: 12px;
+            width: 24px;
+            height: 24px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-weight: 700;
+            font-size: 14px;
+        }
+        
+        /* Stats Section */
+        .stats-section {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            padding: 80px 0;
+            color: #fff;
+        }
+        .stat-item {
+            text-align: center;
+            padding: 30px 20px;
+        }
+        .stat-item h2 {
+            font-size: 56px;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 12px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .stat-item p {
+            font-size: 18px;
+            color: rgba(255,255,255,0.8);
+            margin: 0;
+        }
+        
+        /* Benefits Grid */
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .benefit-card {
+            background: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            border-left: 4px solid #667eea;
+            transition: all 0.3s ease;
+        }
+        .benefit-card:hover {
+            transform: translateX(10px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .benefit-card h4 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: #1a1a2e;
+        }
+        .benefit-card p {
+            font-size: 14px;
+            color: #666;
+            margin: 0;
+            line-height: 1.6;
+        }
+        
+        /* CTA Section */
+        .cta-zenduit {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 80px 0;
+            text-align: center;
+            color: #fff;
+        }
+        .cta-zenduit h2 {
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+        .cta-zenduit p {
+            font-size: 18px;
+            margin-bottom: 40px;
+            color: rgba(255,255,255,0.9);
+        }
+        .cta-zenduit .btn-default {
+            background: #fff;
+            color: #667eea;
+            padding: 16px 48px;
+            font-size: 16px;
+            font-weight: 700;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            border: none;
+        }
+        .cta-zenduit .btn-default:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        
+        /* ========== MOBILE RESPONSIVE FIXES ========== */
+        
+        /* Fix for feature cards spacing on mobile */
+        @media (max-width: 767px) {
+            .feature-card {
+                margin-bottom: 20px;
+                padding: 30px 20px;
+            }
+            .feature-card .icon-box {
+                width: 60px;
+                height: 60px;
+                margin-bottom: 20px;
+            }
+            .feature-card .icon-box i {
+                font-size: 28px;
+            }
+            .feature-card h3 {
+                font-size: 18px;
+                margin-bottom: 12px;
+            }
+            .feature-card p {
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        }
+        
+        /* Fix for solution items on mobile - MAINTAINS COLUMN LAYOUT */
+        @media (max-width: 991px) {
+            .solution-item {
+                flex-direction: column !important;
+                gap: 30px;
+                margin-bottom: 40px;
+            }
+            .solution-image {
+                flex: 0 0 100%;
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            .solution-content {
+                width: 100%;
+            }
+            .solution-content h3 {
+                font-size: 24px;
+                text-align: center;
+            }
+            .solution-content p {
+                text-align: center;
+                font-size: 15px;
+            }
+            .solution-features li {
+                font-size: 14px;
+                padding-left: 28px;
+            }
+        }
+        
+        /* Fix for small screens (mobile) */
+        @media (max-width: 576px) {
+            .zenduit-hero {
+                padding: 80px 0 40px;
+            }
+            .zenduit-hero::before {
+                width: 100%;
+                clip-path: none;
+                opacity: 0.3;
+            }
+            .partnership-badge-large {
+                padding: 12px 24px;
+                margin-bottom: 20px;
+            }
+            .partnership-badge-large span {
+                font-size: 12px;
+                letter-spacing: 2px;
+            }
+            .section-title h1 {
+                font-size: 32px !important;
+                margin-bottom: 20px !important;
+            }
+            .section-title p {
+                font-size: 16px !important;
+                padding: 0 15px;
+            }
+            .solution-content h3 {
+                font-size: 22px;
+            }
+            .stats-section {
+                padding: 60px 0;
+            }
+            .stat-item h2 {
+                font-size: 42px;
+            }
+            .stat-item p {
+                font-size: 16px;
+            }
+            .cta-zenduit h2 {
+                font-size: 28px;
+            }
+            .cta-zenduit p {
+                font-size: 16px;
+                padding: 0 20px;
+            }
+        }
+        
+        /* Fix for service items in industries section */
+        @media (max-width: 767px) {
+            .service-item {
+                margin-bottom: 20px;
+                padding: 25px 20px;
+            }
+            .service-title h3 {
+                font-size: 18px;
+            }
+            .service-content p {
+                font-size: 14px;
+            }
+        }
+        
+        /* Ensure consistent card spacing */
+        .our-services .row {
+            row-gap: 20px;
+        }
+        
+        /* Fix for benefits grid on mobile */
+        @media (max-width: 767px) {
+            .benefits-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            .benefit-card {
+                padding: 25px 20px;
+            }
+        }
+        
+        /* Fix for hero buttons on mobile */
+        @media (max-width: 576px) {
+            .hero-btn {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+            }
+            .hero-btn .btn-default {
+                display: block;
+                width: 100%;
+                text-align: center;
+                margin: 0 !important;
+            }
+        }
+    </style>
 </head>
 <body>
 
     <div class="preloader">
-		<div class="loading-container">
-			<div class="loading"></div>
-			<div id="loading-icon"><img src="images/loader.svg" alt=""></div>
-		</div>
-	</div>
+        <div class="loading-container">
+            <div class="loading"></div>
+            <div id="loading-icon"><img src="images/loader.svg" alt=""></div>
+        </div>
+    </div>
 
     <div class="topbar">
         <div class="container">
@@ -293,15 +439,15 @@
     </div>
 
     <header class="main-header">
-		<div class="header-sticky">
-			<nav class="navbar navbar-expand-lg">
-				<div class="container">
-					<a class="navbar-brand" href="./" style="display: flex; align-items: center; gap: 12px;">
-						<img src="images/maddylogo.jpg" alt="Maddy Group Ltd Logo" style="height: 50px; width: auto;">
-						<span style="font-size: 20px; font-weight: 700; color: #000; white-space: nowrap;">Maddy Group Ltd</span>
-					</a>
+        <div class="header-sticky">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="./" style="display: flex; align-items: center; gap: 12px;">
+                        <img src="images/maddylogo.jpg" alt="Maddy Group Ltd Logo" style="height: 50px; width: auto;">
+                        <span style="font-size: 20px; font-weight: 700; color: #000; white-space: nowrap;">Maddy Group Ltd</span>
+                    </a>
 
-					<div class="collapse navbar-collapse main-menu">
+                    <div class="collapse navbar-collapse main-menu">
                         <div class="nav-menu-wrapper">
                             <ul class="navbar-nav mr-auto" id="menu">
                                 <li class="nav-item"><a class="nav-link" href="./">Home</a></li>                                
@@ -332,13 +478,13 @@
                         <div class="header-btn">
                             <a href="contact.html" class="btn-default">get started</a>
                         </div>
-					</div>
-					<div class="navbar-toggle"></div>
-				</div>
-			</nav>
-			<div class="responsive-menu"></div>
-		</div>
-	</header>
+                    </div>
+                    <div class="navbar-toggle"></div>
+                </div>
+            </nav>
+            <div class="responsive-menu"></div>
+        </div>
+    </header>
 
     <!-- Zenduit Hero Section -->
     <div class="zenduit-hero">
@@ -366,38 +512,38 @@
     </div>
 
     <!-- What is Zenduit Section -->
-<div class="about-us" style="padding: 80px 0; background: #fff;">
-    <div class="container">
-        <div class="row section-row" style="margin-bottom: 40px;">
-            <div class="col-lg-12">
-                <div class="section-title text-center">
-                    <h3 class="wow fadeInUp">About ZenUiT</h3>
-                    <h2 class="wow fadeInUp" data-wow-delay="0.2s">Leading <span>Telematics Innovation</span></h2>
+    <div class="about-us" style="padding: 80px 0; background: #fff;">
+        <div class="container">
+            <div class="row section-row" style="margin-bottom: 40px;">
+                <div class="col-lg-12">
+                    <div class="section-title text-center">
+                        <h3 class="wow fadeInUp">About ZenUiT</h3>
+                        <h2 class="wow fadeInUp" data-wow-delay="0.2s">Leading <span>Telematics Innovation</span></h2>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="solution-item wow fadeInUp" style="margin-bottom: 0;">
+                <div class="solution-image">
+                    <img src="images/Track.png" alt="Zenduit GPS Tracking">
+                </div>
+                <div class="solution-content">
+                    <h3 style="font-size: 28px; margin-bottom: 20px;">Advanced Fleet Management Platform</h3>
+                    <p>
+                        ZenDUiT is a global leader in developing, customizing, and integrating telematics solutions. With a focus on building intelligent, scalable mobile and web platforms, ZenUiT transforms how businesses manage their fleets across various industries.
+                    </p>
+                    <p>
+                        Through advanced GPS tracking, AI-powered analytics, and real-time monitoring, ZenUiT helps organizations increase profitability, enhance safety, and streamline operations.
+                    </p>
+                    <ul class="solution-features" style="margin-top: 24px;">
+                        <li>Real-time GPS Fleet Tracking</li>
+                        <li>AI-Powered Safety Analytics</li>
+                        <li>Predictive Maintenance Systems</li>
+                    </ul>
                 </div>
             </div>
         </div>
-        
-        <div class="solution-item wow fadeInUp" style="margin-bottom: 0;">
-            <div class="solution-image">
-                <img src="images/Track.png" alt="Zenduit GPS Tracking">
-            </div>
-            <div class="solution-content">
-                <h3 style="font-size: 28px; margin-bottom: 20px;">Advanced Fleet Management Platform</h3>
-                <p>
-                    ZenDUiT is a global leader in developing, customizing, and integrating telematics solutions. With a focus on building intelligent, scalable mobile and web platforms, ZenUiT transforms how businesses manage their fleets across various industries.
-                </p>
-                <p>
-                    Through advanced GPS tracking, AI-powered analytics, and real-time monitoring, ZenUiT helps organizations increase profitability, enhance safety, and streamline operations.
-                </p>
-                <ul class="solution-features" style="margin-top: 24px;">
-                    <li>Real-time GPS Fleet Tracking</li>
-                    <li>AI-Powered Safety Analytics</li>
-                    <li>Predictive Maintenance Systems</li>
-                </ul>
-            </div>
-        </div>
     </div>
-</div>
 
     <!-- Core Features Section -->
     <div class="our-services" style="background: #f8f9fa;">
@@ -472,7 +618,7 @@
         </div>
     </div>
 
-    <!-- Solutions Section -->
+   <!-- Solutions Section -->
     <div class="solution-section" id="solutions">
         <div class="container">
             <div class="row section-row">
