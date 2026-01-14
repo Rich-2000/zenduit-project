@@ -275,7 +275,7 @@
             margin-bottom: 30px;
         }
         
-        /* Modern Benefits List with Index.html Checkmark Style */
+        /* Modern Benefits List with Index.html Checkmark Style - UPDATED */
         .benefits-list-modern {
             list-style: none;
             padding: 0;
@@ -308,38 +308,30 @@
         }
         
         /* Updated Why Choose Zenduit Section - Reduced Spacing */
-.why-choose-zenduit-section {
-    padding: 80px 0 100px;
-    background: #fff;
-    position: relative;
-}
+        .why-choose-zenduit-section {
+            padding: 80px 0 100px;
+            background: #fff;
+            position: relative;
+        }
 
-.why-choose-zenduit-section .section-title {
-    margin-bottom: 30px; /* Standardized spacing */
-}
+        .why-choose-zenduit-section .section-title {
+            margin-bottom: 30px; /* Standardized spacing */
+        }
 
-.why-choose-zenduit-section .section-title h2 {
-    margin-bottom: 10px; /* Reduced spacing */
-}
+        .why-choose-zenduit-section .section-title h2 {
+            margin-bottom: 10px; /* Reduced spacing */
+        }
 
-.why-choose-zenduit-section .section-title p {
-    margin-bottom: 0; 
-    line-height: 1.5;
-}
-
-
-.why-choose-zenduit-section .benefits-list-modern {
-    margin-top: 100px;
-}
-
-.why-choose-zenduit-section .benefits-list-modern li {
-    padding: 14px 0 14px 100px; 
-}
+        .why-choose-zenduit-section .section-title p {
+            margin-bottom: 0; 
+            line-height: 1.5;
+        }
         
         .benefits-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 30px;
+            margin-top: 40px;
         }
         
         .benefits-column {
@@ -549,15 +541,30 @@
                 font-size: 16px;
             }
             
+            /* FIXED: Remove left space on mobile for benefits list */
             .benefits-list-modern li {
                 font-size: 16px;
                 padding: 12px 0 12px 35px;
+                margin-left: 0;
+                padding-left: 35px; /* Ensure consistent left padding */
             }
             
             .benefits-list-modern li::before {
                 width: 20px;
                 height: 20px;
                 top: 12px;
+                left: 0; /* Ensure checkmark is at the very left */
+            }
+            
+            /* FIXED: Specific fix for benefits grid on mobile */
+            .benefits-grid .benefits-list-modern {
+                padding-left: 0;
+                margin-left: 0;
+            }
+            
+            .benefits-grid .benefits-column {
+                padding-left: 0;
+                margin-left: 0;
             }
         }
         
@@ -593,6 +600,7 @@
                 overflow-x: auto;
                 padding-bottom: 15px;
                 margin-bottom: 20px;
+                -webkit-overflow-scrolling: touch;
             }
             
             .tab-btn-modern {
@@ -625,11 +633,64 @@
             .cta-zenduit-modern p {
                 font-size: 16px;
             }
+            
+            /* FIXED: Additional mobile fixes for benefits section */
+            .benefits-list-modern li {
+                padding: 12px 0 12px 32px; /* Reduced left padding for small mobile */
+                margin-left: 0;
+            }
+            
+            .benefits-list-modern li::before {
+                left: 0; /* Ensure checkmark is at the very left edge */
+            }
+            
+            .benefits-grid {
+                gap: 15px;
+                margin-top: 30px;
+            }
+            
+            /* Ensure container padding doesn't create space */
+            .why-choose-zenduit-section .container {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+        
+        /* FIXED: Extra small devices (phones less than 400px) */
+        @media (max-width: 400px) {
+            .benefits-list-modern li {
+                padding: 10px 0 10px 28px; /* Even tighter for very small screens */
+                font-size: 15px;
+            }
+            
+            .benefits-list-modern li::before {
+                width: 18px;
+                height: 18px;
+                top: 10px;
+                left: 0;
+            }
+            
+            .benefits-grid {
+                gap: 10px;
+            }
         }
         
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
+        }
+        
+        /* FIXED: Bootstrap container override for benefits section */
+        .why-choose-zenduit-section .container {
+            max-width: 100%;
+        }
+        
+        /* FIXED: Remove any default padding/margin from lists */
+        .benefits-list-modern,
+        .benefits-column,
+        .benefits-grid {
+            padding-left: 0 !important;
+            margin-left: 0 !important;
         }
     </style>
 </head>
