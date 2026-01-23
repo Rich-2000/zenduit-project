@@ -311,7 +311,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="section-title" style="text-align: left; margin-bottom: 40px;">
-                    <h3 class="wow fadeInUp"> partnerships</h3>
+                    <h3 class="wow fadeInUp">partnerships</h3>
                     <h2 class="wow fadeInUp" data-wow-delay="0.2s" data-cursor="-opaque">Our Trusted <span>Partners</span></h2>
                     <p class="wow fadeInUp" data-wow-delay="0.4s">Exclusive partnerships bringing world-class solutions to African businesses.</p>
                 </div>
@@ -325,8 +325,8 @@
             <div class="partnership-slide active" id="zenduit-slide">
                 <div class="row align-items-center">
                     <div class="col-lg-6">
-                        <div class="partnership-media-box wow fadeInLeft" style="position: relative; border-radius: 16px; overflow: hidden; box-shadow: 0 15px 50px rgba(0,0,0,0.1); height: 400px;">
-                            <video playsinline autoplay muted loop style="width: 100%; height: 100%; display: block; border-radius: 16px; object-fit: cover;">
+                        <div class="partnership-media-box wow fadeInLeft">
+                            <video playsinline autoplay muted loop>
                                 <source src="images/zenduit.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
                             </video>
@@ -334,9 +334,9 @@
                     </div>
 
                     <div class="col-lg-6">
-                        <div class="partnership-content wow fadeInRight" style="padding-left: 40px;">
-                            <div class="partnership-badge" style="display: inline-block; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 10px 20px; border-radius: 50px; margin-bottom: 16px;">
-                                <span style="font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 1.5px; color: #fff;">Exclusive Partnership</span>
+                        <div class="partnership-content wow fadeInRight">
+                            <div class="partnership-badge">
+                                <span>Exclusive Partnership</span>
                             </div>
 
                             <div class="section-title" style="text-align: left;">
@@ -353,13 +353,13 @@
                                 <div class="about-footer-list" style="text-align: left;">
                                     <ul style="font-size: 14px;">
                                         <li>Exclusive African Partnership</li>
-                                        <li>Certified zenDUiT Solutions</li>
+                                        <li>Certified zen Solutions</li>
                                         <li>Continental Coverage & Support</li>
                                     </ul>
                                 </div>
                             </div>
 
-                            <div class="partnership-buttons" style="display: flex; gap: 14px; align-items: center; justify-content: flex-start;">
+                            <div class="partnership-buttons">
                                 <a href="zenduit.html" class="btn-default">learn more</a>
                                 <a href="contact.html" class="btn-default">contact us</a>
                             </div>
@@ -372,15 +372,15 @@
             <div class="partnership-slide" id="cardlogix-slide">
                 <div class="row align-items-center">
                     <div class="col-lg-6">
-                        <div class="partnership-media-box wow fadeInLeft" style="position: relative; border-radius: 16px; overflow: hidden; box-shadow: 0 15px 50px rgba(0,0,0,0.1); height: 400px; background: #f5f5f5; display: flex; align-items: center; justify-content: center;">
-                            <img src="images/cardlogix.jpg" alt="CardLogix Partnership" style="width: 100%; height: 100%; display: block; border-radius: 16px; object-fit: cover; object-position: center;">
+                        <div class="partnership-media-box wow fadeInLeft">
+                            <img src="images/BIOSID.jpg" alt="CardLogix Partnership">
                         </div>
                     </div>
 
                     <div class="col-lg-6">
-                        <div class="partnership-content wow fadeInRight" style="padding-left: 40px;">
-                            <div class="partnership-badge" style="display: inline-block; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 10px 20px; border-radius: 50px; margin-bottom: 16px;">
-                                <span style="font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 1.5px; color: #fff;">Exclusive Partnership</span>
+                        <div class="partnership-content wow fadeInRight">
+                            <div class="partnership-badge">
+                                <span>Exclusive Partnership</span>
                             </div>
 
                             <div class="section-title" style="text-align: left;">
@@ -389,7 +389,7 @@
                                     Leading <span>Smart Card Solutions</span>
                                 </h2>
                                 <p style="font-size: 15px; line-height: 1.6; text-align: left; margin-bottom: 20px;">
-                                    Exclusive <strong>CLX</strong> partner delivering advanced smart card technology, secure authentication, and contactless solutions across Africa.
+                                    Exclusive <strong>CLX</strong> partner delivering advanced smart card technology, secure authentication, and access control solutions across Africa.
                                 </p>
                             </div>
 
@@ -398,12 +398,12 @@
                                     <ul style="font-size: 14px;">
                                         <li>Smart Card Technology</li>
                                         <li>Secure Authentication Systems</li>
-                                        <li>Access Controll</li>
+                                        <li>Access Control Solutions</li>
                                     </ul>
                                 </div>
                             </div>
 
-                            <div class="partnership-buttons" style="display: flex; gap: 14px; align-items: center; justify-content: flex-start;">
+                            <div class="partnership-buttons">
                                 <a href="cardlogix.html" class="btn-default">learn more</a>
                                 <a href="contact.html" class="btn-default">contact us</a>
                             </div>
@@ -415,22 +415,26 @@
         <!-- Partnership Carousel End -->
 
         <!-- Carousel Indicators -->
-        <div class="carousel-indicators-custom" style="display: flex; justify-content: center; gap: 10px; margin-top: 30px;">
-            <button class="indicator-dot active" data-slide="zenduit-slide" style="width: 12px; height: 12px; border-radius: 50%; background: #667eea; border: none; cursor: pointer; transition: all 0.3s;"></button>
-            <button class="indicator-dot" data-slide="cardlogix-slide" style="width: 12px; height: 12px; border-radius: 50%; background: #ddd; border: none; cursor: pointer; transition: all 0.3s;"></button>
+        <div class="carousel-indicators-custom">
+            <button class="indicator-dot active" data-slide="zenduit-slide"></button>
+            <button class="indicator-dot" data-slide="cardlogix-slide"></button>
         </div>
     </div>
 </div>
 <!-- Exclusive Partnerships Carousel Section End -->
 
 <style>
+    /* Partnership Section Styling */
     .partnership-slide {
         display: none;
-        animation: fadeInSlide 0.6s ease;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
     }
     
     .partnership-slide.active {
         display: block;
+        opacity: 1;
+        animation: fadeInSlide 0.5s ease-in-out;
     }
     
     @keyframes fadeInSlide {
@@ -442,6 +446,52 @@
             opacity: 1;
             transform: translateX(0);
         }
+    }
+    
+    .partnership-badge {
+        display: inline-block;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        padding: 10px 20px;
+        border-radius: 50px;
+        margin-bottom: 16px;
+    }
+    
+    .partnership-badge span {
+        font-size: 13px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        color: #fff;
+    }
+    
+    .partnership-content {
+        padding-left: 40px;
+    }
+    
+    .partnership-buttons {
+        display: flex;
+        gap: 14px;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    
+    /* Carousel Indicators */
+    .carousel-indicators-custom {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 30px;
+    }
+    
+    .indicator-dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: #ddd;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        padding: 0;
     }
     
     .indicator-dot.active {
@@ -516,7 +566,7 @@
 </style>
 
 <script>
-    // Auto-rotate partnership slides
+    // Enhanced Partnership Carousel with 1-second interval and content visibility fix
     document.addEventListener('DOMContentLoaded', function() {
         const slides = document.querySelectorAll('.partnership-slide');
         const indicators = document.querySelectorAll('.indicator-dot');
@@ -524,11 +574,43 @@
         let autoRotateInterval;
         
         function showSlide(index) {
-            slides.forEach(slide => slide.classList.remove('active'));
-            indicators.forEach(indicator => indicator.classList.remove('active'));
+            // Remove active class from all slides and indicators
+            slides.forEach(slide => {
+                slide.classList.remove('active');
+            });
+            indicators.forEach(indicator => {
+                indicator.classList.remove('active');
+            });
             
+            // Force a reflow to ensure content is properly rendered
+            void slides[index].offsetWidth;
+            
+            // Add active class to current slide and indicator
             slides[index].classList.add('active');
             indicators[index].classList.add('active');
+            
+            // Force content visibility and reflow
+            setTimeout(() => {
+                const activeSlide = slides[index];
+                const mediaBox = activeSlide.querySelector('.partnership-media-box');
+                const content = activeSlide.querySelector('.partnership-content');
+                
+                if (mediaBox) {
+                    mediaBox.style.opacity = '1';
+                    mediaBox.style.visibility = 'visible';
+                }
+                
+                if (content) {
+                    content.style.opacity = '1';
+                    content.style.visibility = 'visible';
+                }
+                
+                // Trigger video play if it's a video element
+                const video = activeSlide.querySelector('video');
+                if (video) {
+                    video.play().catch(e => console.log('Video autoplay prevented:', e));
+                }
+            }, 50);
         }
         
         function nextSlide() {
@@ -537,22 +619,30 @@
         }
         
         function startAutoRotate() {
-            autoRotateInterval = setInterval(nextSlide, 5000);
+            
+            autoRotateInterval = setInterval(nextSlide, 4000);
         }
         
         function stopAutoRotate() {
             clearInterval(autoRotateInterval);
         }
         
-        // Manual indicator clicks
+        
         indicators.forEach((indicator, index) => {
             indicator.addEventListener('click', function() {
                 stopAutoRotate();
                 currentSlide = index;
                 showSlide(currentSlide);
-                startAutoRotate();
+                
+                // Restart auto-rotation after manual click
+                setTimeout(() => {
+                    startAutoRotate();
+                }, 100);
             });
         });
+        
+        // Initialize first slide
+        showSlide(0);
         
         // Start auto-rotation
         startAutoRotate();
@@ -563,6 +653,11 @@
             carouselWrapper.addEventListener('mouseenter', stopAutoRotate);
             carouselWrapper.addEventListener('mouseleave', startAutoRotate);
         }
+        
+        // Ensure content is visible on page load
+        window.addEventListener('load', function() {
+            showSlide(currentSlide);
+        });
     });
 </script>
     
@@ -629,7 +724,7 @@
             </div>
         </div>
     </div>
-    <!-- Certifications & Badges Section End -->
+    <!--Certifications & Badges Section End -->
     
     <!-- Our Services Section Start -->
     <div class="our-services">
