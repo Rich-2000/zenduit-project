@@ -32,6 +32,26 @@
 	<link rel="stylesheet" href="css/mousecursor.css">
 	<!-- Main Custom Css -->
 	<link href="css/custom.css" rel="stylesheet" media="screen">
+
+	<style>
+		/* Force navbar items into a horizontal row on desktop */
+		@media (min-width: 992px) {
+			.main-menu .navbar-nav {
+				flex-direction: row !important;
+				align-items: center !important;
+				flex-wrap: nowrap !important;
+			}
+			.main-menu .navbar-nav > .nav-item {
+				display: inline-flex !important;
+				align-items: center !important;
+				white-space: nowrap;
+			}
+			/* Keep dropdown submenus vertical */
+			.main-menu .navbar-nav > .nav-item > ul {
+				flex-direction: column !important;
+			}
+		}
+	</style>
 </head>
 <body>
 
@@ -103,7 +123,7 @@
                             <ul class="navbar-nav mr-auto" id="menu">
                                 <li class="nav-item"><a class="nav-link" href="./">Home</a></li>                                
                                 <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-                                <!-- UPDATED: Services link now points to cybersecurity-services.html instead of services.html -->
+                                <!-- Services Dropdown -->
                                 <li class="nav-item submenu"><a class="nav-link" href="cybersecurity-services.html">Services</a>
                                     <ul>
                                         <li class="nav-item"><a class="nav-link" href="cybersecurity-services.html">Cybersecurity Services</a></li>
@@ -112,6 +132,22 @@
                                         <li class="nav-item"><a class="nav-link" href="iot-services.html">IoT Services & Smart Cards</a></li>
                                         <li class="nav-item"><a class="nav-link" href="web-solutions.html">Web Solutions</a></li>
                                         <li class="nav-item"><a class="nav-link" href="ict-procurement.html">ICT Tools Procurement</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Technologies Dropdown -->
+                                <li class="nav-item submenu"><a class="nav-link" href="technologies.html">Technologies</a>
+                                    <ul>
+                                        <li class="nav-item"><a class="nav-link" href="technologies.html">Security Assessment</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="technologies.html">Penetration Testing as a Service</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="technologies.html">Breach & Attack Simulation as a Service</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="technologies.html">Phishing as a Service</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="technologies.html">Vulnerability Management as a Service</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="technologies.html">Identity as a Service</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="technologies.html">Security Data Pipeline Services</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="technologies.html">Insider Threat Solutions</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="technologies.html">CISO as a Service</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="technologies.html">Data & Privacy Protection</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="technologies.html">Cloud Security</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
@@ -612,15 +648,16 @@
 </style>
 
 <script>
-    // Enhanced Partnership Carousel with 1-second interval and content visibility fix
+    // Enhanced Partnership Carousel - faster interval for consistent speed on all devices
     document.addEventListener('DOMContentLoaded', function() {
         const slides = document.querySelectorAll('.partnership-slide');
         const indicators = document.querySelectorAll('.indicator-dot');
         let currentSlide = 0;
         let autoRotateInterval;
+        // Faster interval: 2000ms (2 seconds) for consistent speed on desktop and mobile
+        const CAROUSEL_INTERVAL = 2000;
         
         function showSlide(index) {
-            // Remove active class from all slides and indicators
             slides.forEach(slide => {
                 slide.classList.remove('active');
             });
@@ -628,14 +665,11 @@
                 indicator.classList.remove('active');
             });
             
-            // Force a reflow to ensure content is properly rendered
             void slides[index].offsetWidth;
             
-            // Add active class to current slide and indicator
             slides[index].classList.add('active');
             indicators[index].classList.add('active');
             
-            // Force content visibility and reflow
             setTimeout(() => {
                 const activeSlide = slides[index];
                 const mediaBox = activeSlide.querySelector('.partnership-media-box');
@@ -651,7 +685,6 @@
                     content.style.visibility = 'visible';
                 }
                 
-                // Trigger video play if it's a video element
                 const video = activeSlide.querySelector('video');
                 if (video) {
                     video.play().catch(e => console.log('Video autoplay prevented:', e));
@@ -665,42 +698,33 @@
         }
         
         function startAutoRotate() {
-            
-            autoRotateInterval = setInterval(nextSlide, 4000);
+            autoRotateInterval = setInterval(nextSlide, CAROUSEL_INTERVAL);
         }
         
         function stopAutoRotate() {
             clearInterval(autoRotateInterval);
         }
         
-        
         indicators.forEach((indicator, index) => {
             indicator.addEventListener('click', function() {
                 stopAutoRotate();
                 currentSlide = index;
                 showSlide(currentSlide);
-                
-                // Restart auto-rotation after manual click
                 setTimeout(() => {
                     startAutoRotate();
                 }, 100);
             });
         });
         
-        // Initialize first slide
         showSlide(0);
-        
-        // Start auto-rotation
         startAutoRotate();
         
-        // Pause on hover
         const carouselWrapper = document.querySelector('.partnership-carousel-wrapper');
         if (carouselWrapper) {
             carouselWrapper.addEventListener('mouseenter', stopAutoRotate);
             carouselWrapper.addEventListener('mouseleave', startAutoRotate);
         }
         
-        // Ensure content is visible on page load
         window.addEventListener('load', function() {
             showSlide(currentSlide);
         });
@@ -1460,7 +1484,6 @@
                         <!-- Pricing Header Start -->
                         <div class="pricing-header">
                             <h3>Security Assessment</h3>
-                            <!-- <h2>Call for Quote</h2> -->
                             <p>Comprehensive security evaluation and recommendations.</p>
 
                             <div class="icon-box">
@@ -1499,7 +1522,6 @@
                         <!-- Pricing Header Start -->
                         <div class="pricing-header">
                             <h3>Managed SOC Services</h3>
-                            <!-- <h2>Call for Quote</h2> -->
                             <p>24/7 security monitoring and threat response.</p>
 
                             <div class="icon-box">
@@ -1538,7 +1560,6 @@
                         <!-- Pricing Header Start -->
                         <div class="pricing-header">
                             <h3>Virtual CISO</h3>
-                            <!-- <h2>Call for Quote</h2> -->
                             <p>Strategic cybersecurity leadership and governance.</p>
 
                             <div class="icon-box">
@@ -2187,7 +2208,8 @@
                             <li><a href="index.html">home</a></li>
                             <li><a href="about.html">about us</a></li>
                             <li><a href="cybersecurity-services.html">services</a></li>
-                            <li><a href="blog-single.html">blog</a></li>
+                            <li><a href="technologies.html">technologies</a></li>
+                            <li><a href="blog.html">blog</a></li>
                         </ul>
                     </div>
                     <!-- Footer Links End -->
