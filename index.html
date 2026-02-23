@@ -50,6 +50,64 @@
 			.main-menu .navbar-nav > .nav-item > ul {
 				flex-direction: column !important;
 			}
+
+			/* Push nav links well away from the logo */
+			.main-menu {
+				display: flex !important;
+				align-items: center !important;
+				justify-content: flex-end !important;
+				flex: 1;
+			}
+			.main-menu .nav-menu-wrapper {
+				margin-left: 80px !important;
+				flex: 1;
+				display: flex;
+				align-items: center;
+			}
+			.main-menu .navbar-nav {
+				margin-left: auto !important;
+			}
+		}
+
+		/* Push logo further left / away from nav links */
+		.navbar-brand {
+			margin-right: 0 !important;
+			padding-right: 0 !important;
+		}
+		@media (min-width: 992px) {
+			.main-menu .nav-menu-wrapper {
+				margin-left: 120px !important;
+			}
+		}
+
+		/* Force Get Started button text to stay horizontal */
+		.header-btn .btn-default {
+			writing-mode: horizontal-tb !important;
+			text-orientation: mixed !important;
+			white-space: nowrap !important;
+			display: inline-flex !important;
+			align-items: center !important;
+			flex-direction: row !important;
+			letter-spacing: normal !important;
+		}
+
+		/* Fix nav dropdowns so long items never overflow the box */
+		@media (min-width: 992px) {
+			.main-menu .navbar-nav > .nav-item.submenu > ul {
+				min-width: 280px !important;
+				width: auto !important;
+				max-width: 340px !important;
+				white-space: normal !important;
+			}
+			.main-menu .navbar-nav > .nav-item.submenu > ul li a {
+				white-space: normal !important;
+				word-break: normal !important;
+				overflow-wrap: break-word !important;
+				display: block !important;
+				padding-top: 8px !important;
+				padding-bottom: 8px !important;
+				line-height: 1.4 !important;
+			}
 		}
 	</style>
 </head>
@@ -654,7 +712,6 @@
         const indicators = document.querySelectorAll('.indicator-dot');
         let currentSlide = 0;
         let autoRotateInterval;
-        // Faster interval: 2000ms (2 seconds) for consistent speed on desktop and mobile
         const CAROUSEL_INTERVAL = 2000;
         
         function showSlide(index) {
